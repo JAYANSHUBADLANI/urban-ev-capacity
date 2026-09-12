@@ -1,0 +1,10 @@
+k,largest_cluster_share,smallest_cluster_size,inertia,silhouette,calinski_harabasz,stability_mean_ari,stability_min_ari,inertia_drop,passes_stability,passes_balance,admitted,best_by_silhouette,best_by_calinski_harabasz
+2,0.872727,35,322.317,0.560417,222.153,1,1,,True,False,False,False,False
+3,0.541818,12,214.962,0.378372,233.861,0.986159,0.94477,0.333075,True,True,True,True,True
+4,0.44,8,172.502,0.348378,215.801,0.945412,0.626335,0.19752,True,True,True,False,False
+5,0.414545,8,144.445,0.369243,205.689,0.963551,0.930636,0.162652,True,True,True,False,False
+6,0.345455,7,125.685,0.288709,196.441,0.921304,0.816882,0.129873,True,True,True,False,False
+7,0.345455,3,110.227,0.2925,192.228,0.916571,0.885987,0.12299,True,True,True,False,False
+8,0.330909,3,100.216,0.298027,184.361,0.968236,0.885819,0.0908254,True,True,True,False,False
+9,0.323636,3,91.7525,0.305961,178.603,0.897356,0.637859,0.0844504,True,True,True,False,False
+10,0.225455,3,84.0625,0.243566,175.323,0.825938,0.57265,0.0838122,True,True,True,False,False

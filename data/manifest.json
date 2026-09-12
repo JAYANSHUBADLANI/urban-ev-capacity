@@ -1,0 +1,57 @@
+{
+  "commit": "44f2aa0c8d89f192bce00bafb0def74a21b39c68",
+  "files": {
+    "adj.csv": {
+      "bytes": 152420,
+      "sha256": "93100d3b042086159387ec069efbaf411b90298cdf8a7ada64de214c6bdb5c00"
+    },
+    "distance.csv": {
+      "bytes": 897582,
+      "sha256": "3630642ddce0e4aac440804c134f3424614ce2bd34fc7bcadd1bc1a3de0d303e"
+    },
+    "duration.csv": {
+      "bytes": 17802378,
+      "sha256": "3afc79ca193267bca327b04d45b6cf24240f8c93ea94bcbb0a52cc119b8080d1"
+    },
+    "e_price.csv": {
+      "bytes": 12046239,
+      "sha256": "0076d03b8e400c3e911789e2c7ffb7dd0d44a4414247ead676b508def95bcef4"
+    },
+    "inf.csv": {
+      "bytes": 74446,
+      "sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c"
+    },
+    "inf_raw.csv": {
+      "bytes": 86790,
+      "sha256": "746adc9f430b7aaa756aec122aee85a39302a8db1cc69e5fc7d2a274c62cbb25"
+    },
+    "occupancy.csv": {
+      "bytes": 5513676,
+      "sha256": "1b9099b8c6c33510a2c48a79c4b524b01f6a2f5df45b9d604361b22ad4bc5211"
+    },
+    "s_price.csv": {
+      "bytes": 14966150,
+      "sha256": "d125783e042024157f38d1749232696ea2aa893c61fc31672a3c54374498d3dc"
+    },
+    "volume-11kW.csv": {
+      "bytes": 19719503,
+      "sha256": "0841f776149120d03bfe9aa04a192a26f28a0f8e89d7752cf59d44672f5b5ee0"
+    },
+    "volume.csv": {
+      "bytes": 16503910,
+      "sha256": "a55a095ce75af33c59aece2643d5d71b5cd5a0dc73bb97bc553f0a48f40ace32"
+    },
+    "weather_airport.csv": {
+      "bytes": 165880,
+      "sha256": "ccc9b0056e8f770502d4e05e5cf15cc189af28317629e1b0cb5428ef193ea503"
+    },
+    "weather_central.csv": {
+      "bytes": 181328,
+      "sha256": "da8c16dcc6a25eadc97ca062998b5dbb01efbb4569efdd693ac98fb5bbc6d065"
+    },
+    "weather_header.txt": {
+      "bytes": 494,
+      "sha256": "4cf7d893ba9639fc6309fdcd192f0727376795e70f3d85437a5f1624ef7fc49a"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+# Inputs are fetched, not stored in the repository.
+data/raw/
+data/interim/
+
+# Run bookkeeping is local to a run.
+state/
+
+# Packaging and caches.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+checkpoint.zip
+urban-ev-capacity.zip
+.DS_Store

@@ -1,0 +1,2 @@
+n_rows,n_robust_flags,n_forest_flags,n_both,n_either,jaccard,share_of_robust_also_forest,share_of_forest_also_robust
+1194600,6431,5973,101,12303,0.00820938,0.0157052,0.0169094

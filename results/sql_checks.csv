@@ -1,0 +1,15 @@
+check_id,n_failing,n_total,status
+sql_distinct_hours,0,4344,pass
+sql_distinct_zones,0,275,pass
+sql_duplicate_keys,0,1194600,pass
+sql_duration_above_capacity,0,1194600,pass
+sql_edges_are_reciprocal,0,1220,pass
+sql_negative_values,0,1194600,pass
+sql_occupancy_without_volume,37717,1194600,info
+sql_ragged_zone_coverage,0,275,pass
+sql_row_count,0,1194600,pass
+sql_saturated_zone_hours,8816,1194600,info
+sql_utilisation_above_one,0,1194600,pass
+sql_volume_without_occupancy,4659,1194600,info
+sql_weather_hours,0,4344,pass
+sql_zones_missing_attributes,0,275,pass

@@ -1,0 +1,32 @@
+check_id,description,scope,n_failing,n_total,fraction,status,detail
+index_completeness,the hourly index covers every hour between the first and last observation,index,0,4344,0,pass,4344 distinct hours
+index_length,the index holds the documented 4344 hours,index,0,4344,0,pass,
+duplicate_keys,no zone and timestamp pair appears twice,rows,0,1194600,0,pass,
+zone_count,the documented 275 zones are present,zones,0,275,0,pass,
+zone_coverage,every zone is observed for every hour in the window,zones,0,275,0,pass,
+no_nulls,no measured value is null after the published imputation,cells,0,7167600,0,pass,
+bounds_occupancy,occupancy lies inside its physical bounds,rows,0,1194600,0,pass,observed range 0.000 to 373.000
+bounds_volume,volume lies inside its physical bounds,rows,0,1194600,0,pass,observed range 0.000 to 16732.500
+bounds_volume_11kw,volume_11kw lies inside its physical bounds,rows,0,1194600,0,pass,observed range 0.000 to 5073.000
+bounds_duration,duration lies inside its physical bounds,rows,0,1194600,0,pass,observed range 0.000 to 207.583
+bounds_e_price,e_price lies inside its physical bounds,rows,0,1194600,0,pass,observed range 0.238 to 1.800
+bounds_s_price,s_price lies inside its physical bounds,rows,0,1194600,0,pass,observed range 0.000 to 1.450
+capacity_bound_occupancy,occupancy never exceeds the charging points installed in the zone,rows,0,1194600,0,pass,
+capacity_bound_duration,duration never exceeds the charging points installed in the zone,rows,0,1194600,0,pass,
+cross_occupancy_without_volume,points in use are accompanied by non zero charging volume,rows,37717,1194600,0.031573,warn,"counted, not repaired"
+cross_volume_without_occupancy,charging volume is accompanied by at least one point in use,rows,4659,1194600,0.0039,pass,"counted, not repaired"
+cross_duration_without_occupancy,charging duration is accompanied by at least one point in use,rows,4659,1194600,0.0039,pass,"counted, not repaired"
+saturated_zone_hours,zone hours with every charging point in use,rows,8816,1194600,0.00738,info,informational: drives the saturation aware metric
+flat_run_occupancy,occupancy observations inside a constant run of 4 hours or more,rows,494894,1194600,0.414276,info,"candidate imputation artefact, reported not repaired"
+flat_run_volume,volume observations inside a constant run of 4 hours or more,rows,359706,1194600,0.30111,info,"candidate imputation artefact, reported not repaired"
+flat_run_duration,duration observations inside a constant run of 4 hours or more,rows,360278,1194600,0.301589,info,"candidate imputation artefact, reported not repaired"
+flat_run_e_price,e_price observations inside a constant run of 4 hours or more,rows,1038222,1194600,0.869096,info,"candidate imputation artefact, reported not repaired"
+flat_run_s_price,s_price observations inside a constant run of 4 hours or more,rows,1010511,1194600,0.845899,info,"candidate imputation artefact, reported not repaired"
+weather_repeat_air_temp_c_central,air_temp_c_central hours identical to the preceding hour,hours,2938,4343,0.676491,info,weather is a lower resolution covariate
+weather_repeat_humidity_pct_central,humidity_pct_central hours identical to the preceding hour,hours,3017,4343,0.694681,info,weather is a lower resolution covariate
+weather_repeat_air_temp_c_airport,air_temp_c_airport hours identical to the preceding hour,hours,2281,4343,0.525213,info,weather is a lower resolution covariate
+volume_estimates_identical,rows where the rated power and 11 kW volume estimates agree,rows,986468,1194600,0.825773,info,aggregate ratio 2.4225
+adjacency_symmetric,the zone adjacency matrix is symmetric as published,cells,40,75625,0.000529,fail,20 edges recorded in one direction only; the neighbour structure is symmetrised by union
+adjacency_self_loops,the adjacency diagonal is zero as published,zones,275,275,1,fail,a zone is listed as adjacent to itself; the diagonal is removed
+adjacency_isolated_zones,zones with no adjacent zone once the diagonal is removed,zones,4,275,0.014545,info,isolated zones can neither receive nor shed spillover demand
+distance_zero_diagonal,the zone distance matrix has a zero diagonal,cells,0,275,0,pass,

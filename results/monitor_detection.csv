@@ -1,0 +1,49 @@
+variant,horizon,monitor,kind,target_far_per_1000h,threshold,achieved_far_per_1000h,n_stable_hours,n_false_alarms,detected,alert_time,delay_hours
+preregistered,1,input_psi,input,0.5,0.0362786,0.586854,1704,1,True,2023-01-23 23:00,143
+preregistered,1,input_psi,input,1,0.0362697,1.17371,1704,2,True,2023-01-23 23:00,143
+preregistered,1,input_psi,input,2,0.0362655,2.34742,1704,4,True,2023-01-23 23:00,143
+preregistered,1,input_psi,input,5,0.0361382,5.28169,1704,9,True,2023-01-23 23:00,143
+preregistered,1,input_ks,input,0.5,0.176746,0.586854,1704,1,True,2023-01-25 13:00,181
+preregistered,1,input_ks,input,1,0.176727,1.17371,1704,2,True,2023-01-25 13:00,181
+preregistered,1,input_ks,input,2,0.176712,2.34742,1704,4,True,2023-01-25 13:00,181
+preregistered,1,input_ks,input,5,0.176557,5.28169,1704,9,True,2023-01-25 13:00,181
+preregistered,1,residual_mean_cusum,residual,0.5,34.2843,0,1704,0,False,,-1
+preregistered,1,residual_mean_cusum,residual,1,34.2843,0,1704,0,False,,-1
+preregistered,1,residual_mean_cusum,residual,2,34.2843,0,1704,0,False,,-1
+preregistered,1,residual_mean_cusum,residual,5,34.2843,0,1704,0,False,,-1
+preregistered,1,residual_abs_ewma,residual,0.5,6.13179,0.586854,1704,1,False,,-1
+preregistered,1,residual_abs_ewma,residual,1,5.71129,1.17371,1704,2,False,,-1
+preregistered,1,residual_abs_ewma,residual,2,5.21084,2.34742,1704,4,False,,-1
+preregistered,1,residual_abs_ewma,residual,5,3.58183,5.28169,1704,9,False,,-1
+stable_window_excludes_december_shock,1,input_psi,input,0.5,0.0362793,0.661376,1512,1,True,2023-01-23 23:00,143
+stable_window_excludes_december_shock,1,input_psi,input,1,0.0362718,1.32275,1512,2,True,2023-01-23 23:00,143
+stable_window_excludes_december_shock,1,input_psi,input,2,0.0362656,2.6455,1512,4,True,2023-01-23 23:00,143
+stable_window_excludes_december_shock,1,input_psi,input,5,0.0361664,5.29101,1512,8,True,2023-01-23 23:00,143
+stable_window_excludes_december_shock,1,input_ks,input,0.5,0.176748,0.661376,1512,1,True,2023-01-25 13:00,181
+stable_window_excludes_december_shock,1,input_ks,input,1,0.176731,1.32275,1512,2,True,2023-01-25 13:00,181
+stable_window_excludes_december_shock,1,input_ks,input,2,0.17672,2.6455,1512,4,True,2023-01-25 13:00,181
+stable_window_excludes_december_shock,1,input_ks,input,5,0.17662,5.29101,1512,8,True,2023-01-25 13:00,181
+stable_window_excludes_december_shock,1,residual_mean_cusum,residual,0.5,34.2843,0,1512,0,False,,-1
+stable_window_excludes_december_shock,1,residual_mean_cusum,residual,1,34.2843,0,1512,0,False,,-1
+stable_window_excludes_december_shock,1,residual_mean_cusum,residual,2,34.2843,0,1512,0,False,,-1
+stable_window_excludes_december_shock,1,residual_mean_cusum,residual,5,34.2843,0,1512,0,False,,-1
+stable_window_excludes_december_shock,1,residual_abs_ewma,residual,0.5,1.89696,0.661376,1512,1,False,,-1
+stable_window_excludes_december_shock,1,residual_abs_ewma,residual,1,1.70354,1.32275,1512,2,False,,-1
+stable_window_excludes_december_shock,1,residual_abs_ewma,residual,2,1.47544,2.6455,1512,4,True,2023-01-20 00:00,48
+stable_window_excludes_december_shock,1,residual_abs_ewma,residual,5,0.898031,5.29101,1512,8,True,2023-01-19 21:00,45
+horizon_24,24,input_psi,input,0.5,0.0362786,0.586854,1704,1,True,2023-01-23 23:00,143
+horizon_24,24,input_psi,input,1,0.0362697,1.17371,1704,2,True,2023-01-23 23:00,143
+horizon_24,24,input_psi,input,2,0.0362655,2.34742,1704,4,True,2023-01-23 23:00,143
+horizon_24,24,input_psi,input,5,0.0361382,5.28169,1704,9,True,2023-01-23 23:00,143
+horizon_24,24,input_ks,input,0.5,0.176746,0.586854,1704,1,True,2023-01-25 13:00,181
+horizon_24,24,input_ks,input,1,0.176727,1.17371,1704,2,True,2023-01-25 13:00,181
+horizon_24,24,input_ks,input,2,0.176712,2.34742,1704,4,True,2023-01-25 13:00,181
+horizon_24,24,input_ks,input,5,0.176557,5.28169,1704,9,True,2023-01-25 13:00,181
+horizon_24,24,residual_mean_cusum,residual,0.5,230.823,0.586854,1704,1,True,2023-01-31 17:00,329
+horizon_24,24,residual_mean_cusum,residual,1,230.723,1.17371,1704,2,True,2023-01-31 17:00,329
+horizon_24,24,residual_mean_cusum,residual,2,230.443,2.34742,1704,4,True,2023-01-31 17:00,329
+horizon_24,24,residual_mean_cusum,residual,5,229.801,5.28169,1704,9,True,2023-01-31 17:00,329
+horizon_24,24,residual_abs_ewma,residual,0.5,4.54939,0.586854,1704,1,False,,-1
+horizon_24,24,residual_abs_ewma,residual,1,4.27365,1.17371,1704,2,False,,-1
+horizon_24,24,residual_abs_ewma,residual,2,3.66166,2.34742,1704,4,False,,-1
+horizon_24,24,residual_abs_ewma,residual,5,2.4613,5.28169,1704,9,True,2023-02-27 12:00,972

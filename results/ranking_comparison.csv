@@ -1,0 +1,3 @@
+estimate,n_zones_with_binding_capacity,n_zones_with_no_marginal_value,spearman_methods_all_zones,spearman_methods_active_zones,spearman_utilisation_vs_simulated_marginal,spearman_utilisation_vs_analytic_marginal,spearman_simulated_vs_analytic_marginal,top20_overlap,rankings_disagree_materially
+rated,123,152,0.757953,0.807811,0.576515,0.666556,0.757953,11,True
+11kw,120,155,0.748728,0.790907,0.545487,0.663954,0.748728,12,True

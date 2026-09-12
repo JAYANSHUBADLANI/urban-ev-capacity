@@ -1,0 +1,4 @@
+claim,verdict,n_target_horizon_combinations,n_won_by_pooled_model,pooled_model_wins_majority,spearman_decile_vs_advantage,advantage_increases_as_volume_falls,mean_advantage_lowest_decile,mean_advantage_highest_decile,n_zones,n_matched_rates,n_rates_where_input_is_later,best_input_delay_hours,best_residual_delay_hours,residual_monitor_ever_detected,estimate,spearman_utilisation_vs_marginal,rankings_disagree_materially,n_budgets,n_budgets_won_by_marginal_rule,marginal_rule_wins_majority,mean_extra_energy_kwh,top20_overlap,n_zones_with_no_marginal_value
+1,refuted,9,6,True,0.334284,False,-0.177996,0.0116357,275,,,,,,,,,,,,,,
+2,refuted,,,,,,,,,4,0,143,inf,False,,,,,,,,,
+3,supported,,,,,,,,,,,,,,rated,0.576515,True,5,5,True,268708,11,152

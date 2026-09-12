@@ -1,0 +1,10 @@
+target,horizon,best_global_family,best_global_mase,best_per_zone_family,best_per_zone_mase,global_advantage_mase,global_wins
+duration,1,global_gbm,0.293215,zone_gbm,0.302225,0.0090095,True
+duration,6,global_gbm,0.730382,zone_gbm,0.761401,0.0310193,True
+duration,24,global_gbm,0.791524,zone_ridge,0.859992,0.0684675,True
+occupancy,1,global_gbm,0.384178,zone_ridge,0.413371,0.0291926,True
+occupancy,6,global_gbm,0.760286,zone_ridge,0.805241,0.0449551,True
+occupancy,24,global_gbm,0.838195,zone_ridge,0.891766,0.0535708,True
+volume,1,global_gbm,0.370612,zone_gbm,0.318896,-0.0517155,False
+volume,6,global_gbm,0.873255,zone_gbm,0.777834,-0.0954212,False
+volume,24,global_gbm,0.932553,zone_ridge,0.862492,-0.0700611,False

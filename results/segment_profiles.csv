@@ -1,0 +1,4 @@
+segment,n_zones,peak_hour_weekday,trough_hour_weekday,peak_to_mean_ratio,weekend_to_weekday_ratio,overnight_share,mean_capacity_points,mean_utilisation,total_volume_kwh,label
+0,150,1,15,1.309,1.097,0.319,72.1,0.289,2.36645e+08,"overnight charging, residential rhythm"
+1,12,11,4,1.816,0.581,0.125,55.8,0.1808,2.84051e+06,"morning peak, commuter arrival rhythm"
+2,113,13,8,1.076,0.963,0.246,53.5,0.2566,7.21678e+07,"flat load, close to always on"

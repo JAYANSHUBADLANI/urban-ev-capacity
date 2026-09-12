@@ -1,0 +1,7 @@
+docs/preregistration.md
+sha256 0606492a2056934df71fe2300f9ffcc7c3907f2e60827085dbf130321fff868c
+  digest of the document as frozen, taken before any model in the grid was fitted
+sha256_current_file 18dcdd2059f1fb5e84d811f27af9e3b6de036d1eb330ae74dc1e75fb75e6274a
+  digest of the document now, after the outcomes section was appended
+frozen_section_rematches yes
+  whether the text above the outcomes heading still hashes to the frozen digest

@@ -1,0 +1,13 @@
+quantity,value,unit
+zone hours observed,1.1946e+06,rows
+zones,275,zones
+hours,4344,hours
+charging points,17532,points
+stations,1362,stations
+"total energy, rated power estimate",3.11653e+08,kWh
+"total energy, 11 kW estimate",1.28647e+08,kWh
+ratio of the two energy estimates,2.42254,ratio
+mean utilisation,0.270956,fraction
+zone hours at the ceiling,8816,rows
+zones that reach the ceiling at least once,104,zones
+total point hours,1.56559e+07,point hours

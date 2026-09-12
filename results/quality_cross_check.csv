@@ -1,0 +1,5 @@
+sql_check,pandas_check,sql_count,pandas_count,agree
+sql_occupancy_without_volume,cross_occupancy_without_volume,37717,37717,True
+sql_volume_without_occupancy,cross_volume_without_occupancy,4659,4659,True
+sql_saturated_zone_hours,saturated_zone_hours,8816,8816,True
+sql_duplicate_keys,duplicate_keys,0,0,True

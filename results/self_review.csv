@@ -1,0 +1,13 @@
+check,status,detail
+test suite passes,pass,"363 passed, 6 warnings in 22.25s"
+at least 90 tests,pass,363 tests
+grid complete,pass,576 of 576 cells
+determinism headline_model_table.csv,pass,sha256 b177212ebcb1ac21ce1675de04697c3c
+determinism headline_capacity_table.csv,pass,sha256 6ecae845a15abbb97d64060b4804b685
+every document present,pass,all present
+every result table present,pass,20 tables
+at least ten figures,pass,15 figures
+all three claims resolved,pass,"claim 1 refuted, claim 2 refuted, claim 3 supported"
+no absolute paths in tracked files,pass,none
+inputs and run state are excluded,pass,"data/raw, data/interim, state"
+dataset digests match the manifest,pass,13 files

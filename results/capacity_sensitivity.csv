@@ -1,0 +1,4 @@
+service_hours_scale,median_assumed_session_hours,n_seeds,spearman_utilisation_vs_simulated_marginal,spearman_utilisation_vs_analytic_marginal,n_zones_with_marginal_value,rankings_disagree_materially,total_marginal_energy_kwh
+0.5,1.75,10,0.611793,0.666556,128,True,149242
+1,3.5,10,0.550363,0.666556,91,True,44697
+1.5,5.25,10,0.443541,0.666556,58,True,46205.2

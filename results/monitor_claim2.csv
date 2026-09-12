@@ -1,0 +1,13 @@
+variant,horizon,target_far_per_1000h,best_input_monitor,best_input_delay_hours,best_residual_monitor,best_residual_delay_hours,input_later_than_residual
+preregistered,1,0.5,input_psi,143,none,inf,False
+preregistered,1,1,input_psi,143,none,inf,False
+preregistered,1,2,input_psi,143,none,inf,False
+preregistered,1,5,input_psi,143,none,inf,False
+stable_window_excludes_december_shock,1,0.5,input_psi,143,none,inf,False
+stable_window_excludes_december_shock,1,1,input_psi,143,none,inf,False
+stable_window_excludes_december_shock,1,2,input_psi,143,residual_abs_ewma,48,True
+stable_window_excludes_december_shock,1,5,input_psi,143,residual_abs_ewma,45,True
+horizon_24,24,0.5,input_psi,143,residual_mean_cusum,329,False
+horizon_24,24,1,input_psi,143,residual_mean_cusum,329,False
+horizon_24,24,2,input_psi,143,residual_mean_cusum,329,False
+horizon_24,24,5,input_psi,143,residual_mean_cusum,329,False

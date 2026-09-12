@@ -237,9 +237,9 @@ meaningless. Every unserved demand figure is therefore a lower bound.
 
 Mean session length is an assumption, not a measurement: the dataset records
 hourly aggregates and never individual sessions. I set it from the power of the
-zone's points — one hour where points are rated at 22 kW or more, two hours
-between 11 and 22 kW and three and a half hours below — and vary the whole
-assumption by half in each direction in the sensitivity analysis.
+zone's points: one hour where points are rated at 22 kW or more, two hours
+between 11 and 22 kW, and three and a half hours below that, and vary the
+whole assumption by half in each direction in the sensitivity analysis.
 
 I compute the marginal value of one more point two ways. The analytic route
 evaluates the loss formula at one more server. The simulated route replays

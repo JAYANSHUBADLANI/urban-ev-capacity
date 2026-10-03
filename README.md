@@ -1,5 +1,7 @@
 # Urban EV charging: demand, capacity, and what breaks when demand shifts
 
+[![tests](https://github.com/JAYANSHUBADLANI/urban-ev-capacity/actions/workflows/pytest.yml/badge.svg)](https://github.com/JAYANSHUBADLANI/urban-ev-capacity/actions/workflows/pytest.yml)
+
 A fuel retail network operator runs a large estate of forecourt sites and has
 to decide how much public EV charging capacity to add, and where. Capital is
 limited, sites differ, and the obvious rule (add capacity where utilisation is

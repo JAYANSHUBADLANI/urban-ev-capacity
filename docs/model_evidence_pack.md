@@ -78,7 +78,7 @@ Detailed results are in `docs/results.md` and the underlying tables in
 
 | Failure mode | Evidence | Mitigation |
 | --- | --- | --- |
-| Regime change in demand | Two episodes inside a six month window, located by two independent detectors | Input drift monitoring, which detects the January break (Chinese New Year) 143 hours in; triggered retraining recovers most of the gap at five refits |
+| Shifts in demand | Two episodes inside a six month window, located by two independent detectors | Input drift monitoring, which detects the January break (Chinese New Year) 143 hours in; triggered retraining recovers most of the gap at five refits |
 | Residual monitoring is blind at a one hour horizon | Mean absolute residual falls after the break rather than rising, because the model leans on the most recent observation and tracks the level shift | Do not rely on residual monitoring alone at short horizons; the input monitor is the earlier signal here |
 | Saturated zones | Errors are asymmetric near the ceiling and 104 of 275 zones reach it | Saturation weighted metric reported alongside the symmetric ones; predictions clipped to installed capacity |
 | Quiet zones | Excluded upstream, so unrepresented | Do not apply the model outside the published sample |

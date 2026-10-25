@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import csv
 import os
-from typing import Dict, Iterable, List, Sequence
+from typing import Dict, List, Sequence
 
 import pandas as pd
 

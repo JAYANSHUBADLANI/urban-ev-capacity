@@ -21,12 +21,12 @@ zones would dominate the phase.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Dict, List, Optional, Sequence, Tuple
+from typing import Dict, Optional, Tuple
 
 import numpy as np
 import pandas as pd
 
-from .config import CONFIG, MonitorConfig
+from .config import MonitorConfig
 from .logging_utils import get_logger
 
 LOG = get_logger("monitor")
@@ -103,7 +103,7 @@ def input_monitor_series(feature_blocks: Dict[str, np.ndarray],
     monitors genuinely different rather than two scalings of one statistic.
     """
     psi_columns, ks_columns = [], []
-    for name, block in feature_blocks.items():
+    for block in feature_blocks.values():
         reference = block[reference_slice]
         psi_edges = _bin_edges(reference, PSI_BINS)
         ks_edges = _bin_edges(reference, KS_BINS)

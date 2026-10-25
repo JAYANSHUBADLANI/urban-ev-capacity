@@ -18,7 +18,7 @@ import pandas as pd
 
 from uev import progress
 from uev.breaks import (agreement, deseasonalise_daily, detect, local_break_pvalue,
-                        pelt, windows_around)
+                        windows_around)
 from uev.eda import (aggregate_series, daily_series, hour_of_day_profile,
                      price_variation, saturation_profile, summary_rows,
                      volume_estimate_comparison, zone_volume_deciles)

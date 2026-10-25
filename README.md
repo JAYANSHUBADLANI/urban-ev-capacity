@@ -97,7 +97,9 @@ python scripts/fetch_data.py
 ```
 
 Then run the phases in order. Each one reads the artefacts of the phases before
-it and can be run on its own.
+it and can be run on its own. Phases 1, 5 and 6 have no script of their own:
+phase 1 is the package setup, phase 5 is freezing `docs/preregistration.md`, and
+phase 6 is the feature and model code in `src/uev/` that phase 7 calls.
 
 ```bash
 python scripts/run_phase02_load.py
@@ -136,7 +138,8 @@ python scripts/run_phase12_selfreview.py
 ```
 
 The grid is the long part. It writes each cell as it finishes and skips cells
-already recorded, so it can be stopped and resumed. Progress at any time:
+already recorded, so it can be stopped and resumed. To recompute it from
+scratch, delete `results/grid_*.csv` first. Progress at any time:
 
 ```bash
 python scripts/run_phase07_grid.py --status
@@ -243,12 +246,9 @@ I give full detail in `docs/method.md`. What the study cannot support is in
 Code is MIT licensed; see `LICENSE`. The dataset is CC0 1.0. If the data is
 used, cite the publication:
 
-> UrbanEV: an open benchmark dataset of public electric vehicle charging in
-> Shenzhen. *Scientific Data* (2025). DOI 10.1038/s41597-025-04874-4
+> Li, H., Qu, H., Tan, X., You, L., Zhu, R. and Fan, W. (2025). UrbanEV: An
+> Open Benchmark Dataset for Urban Electric Vehicle Charging Demand Prediction.
+> *Scientific Data* 12, 523. DOI 10.1038/s41597-025-04874-4
 >
 > Dataset repository: https://github.com/IntelligentSystemsLab/UrbanEV
 > Pinned commit: 44f2aa0c8d89f192bce00bafb0def74a21b39c68
-
-I've deliberately not reproduced the author list here, because I didn't read it
-from the data files this project fetches. The DOI resolves to the authoritative
-citation.

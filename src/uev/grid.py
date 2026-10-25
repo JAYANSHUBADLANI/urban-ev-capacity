@@ -22,12 +22,12 @@ import pandas as pd
 
 from .config import CONFIG, EXPECTED_HOURS, HORIZONS, TARGETS, cell_key
 from .cv import Fold, make_folds, holdout_origins, train_origins
-from .features import WARMUP, FeatureSet, build_features
+from .features import WARMUP, FeatureSet
 from .io_load import Bundle
 from .logging_utils import get_logger
 from .metrics import evaluate, seasonal_naive_denominator
 from .models import (BASELINE_FAMILIES, GLOBAL_FAMILIES, PER_ZONE_FAMILIES,
-                     ar_lag_tensor, baseline_predictions, fit_predict_autoregressive,
+                     baseline_predictions, fit_predict_autoregressive,
                      fit_predict_global, fit_predict_per_zone, select_global_gbm_params)
 from .seeds import derive_seed
 

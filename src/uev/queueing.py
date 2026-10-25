@@ -24,13 +24,12 @@ reported rather than assumed.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Dict, List, Optional, Sequence, Tuple
+from typing import Dict, List, Optional
 
 import numpy as np
 import pandas as pd
 
 from .config import CONFIG, CapacityConfig
-from .graph import neighbour_weights
 from .io_load import Bundle
 from .logging_utils import get_logger
 from .seeds import rng

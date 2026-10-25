@@ -34,7 +34,6 @@ from uev.monitor import (MONITORED_FEATURES, MonitorBacktest, calibrate_threshol
                          input_monitor_series, residual_monitor_series)
 from uev.paths import RESULTS, ensure_dirs
 from uev.resultsio import write_table
-from uev.seeds import derive_seed
 
 LOG = get_logger("phase08")
 
@@ -105,7 +104,6 @@ def main() -> int:
     zone_mean, zone_std = zone_stats(features, train_end)
     residual_statistics: Dict[int, Dict[str, np.ndarray]] = {}
     residual_series: Dict[int, tuple] = {}
-    primary_model = None
 
     for horizon in sorted({args.horizon, 24}):  # noqa: B007
         train_origins = np.arange(WARMUP - 1, train_end - horizon, dtype=int)
@@ -121,9 +119,6 @@ def main() -> int:
                                          np.tile(capacity, score_origins.size))
         LOG.info("horizon %d: ridge alpha %g, %d fits, mean absolute residual %.4f",
                  horizon, model.alpha, n_fits, float(np.mean(np.abs(predicted - actual))))
-        if horizon == args.horizon:
-            primary_model = model
-
         grid = (predicted - actual).reshape(score_origins.size, features.n_zones)
         mean_residual = np.full(features.n_hours, np.nan)
         mean_abs_residual = np.full(features.n_hours, np.nan)

@@ -7,7 +7,6 @@ implementation is compared against those rather than against itself.
 from __future__ import annotations
 
 import numpy as np
-import pandas as pd
 import pytest
 
 from uev.queueing import (allocate_by_weight, carried_load, erlang_b,
@@ -130,7 +129,6 @@ def test_inversion_returns_at_least_the_carried_load():
 
 
 def test_service_hours_of_a_persistent_series_are_long():
-    hours = np.arange(500)
     slow = 10 + np.cumsum(np.random.default_rng(0).normal(0, 0.05, 500))
     fast = 10 + np.random.default_rng(0).normal(0, 1.0, 500)
     assert service_hours_from_persistence(slow) > service_hours_from_persistence(fast)

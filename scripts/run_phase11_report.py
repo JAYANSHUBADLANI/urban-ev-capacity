@@ -514,7 +514,6 @@ def main() -> int:
         LOG.info("claim %d: %s", summary["claim"], summary["verdict"])
 
     summary_rows = read("eda_summary.csv").set_index("quantity")["value"]
-    saturation = read("zone_saturation.csv")
     windows = read("monitoring_window.csv").set_index("role")
     context = {
         "n_rows": int(summary_rows["zone hours observed"]),

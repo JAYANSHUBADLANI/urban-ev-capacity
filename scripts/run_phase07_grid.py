@@ -20,7 +20,7 @@ import pandas as pd
 
 from uev import progress
 from uev.config import HORIZONS, TARGETS
-from uev.cv import describe, make_folds
+from uev.cv import describe
 from uev.features import build_features
 from uev.grid import (FAMILIES, GRID_DOW_METRICS, GRID_HOUR_METRICS,
                       GRID_METRICS, GRID_ZONE_METRICS, GridRunner, expected_cells)

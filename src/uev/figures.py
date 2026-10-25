@@ -52,7 +52,6 @@ def _finish(figure, axes, path_name: str, caption: str) -> str:
 def figure_daily_demand_with_breaks() -> Optional[str]:
     daily = _read("aggregate_daily.csv")
     breaks = _read("structural_breaks.csv")
-    significance = _read("structural_break_significance.csv")
     if daily is None:
         return None
     daily["timestamp"] = pd.to_datetime(daily["timestamp"])

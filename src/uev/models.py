@@ -37,7 +37,6 @@ from sklearn.preprocessing import StandardScaler
 
 from .features import FeatureSet
 from .logging_utils import get_logger
-from .seeds import derive_seed
 
 LOG = get_logger("models")
 

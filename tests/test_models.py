@@ -7,7 +7,7 @@ import pandas as pd
 import pytest
 
 from uev.features import FeatureSet
-from uev.models import (AR_ORDER, GLOBAL_FAMILIES, PER_ZONE_FAMILIES, RidgeModel,
+from uev.models import (AR_ORDER, GLOBAL_FAMILIES, RidgeModel,
                         _fit_ridge, _inner_split, _usable_columns, ar_lag_tensor,
                         baseline_predictions, fit_predict_autoregressive,
                         fit_predict_global, fit_predict_per_zone)

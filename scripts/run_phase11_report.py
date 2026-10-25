@@ -120,7 +120,9 @@ def render_results(claims, model_table, capacity_table, context) -> str:
                  f"break runs from {context['stable_start']} to {context['stable_end']}. "
                  f"That segment calibrates every monitor, and the break immediately after "
                  f"it, {context['primary_break']}, is what detection delay is measured "
-                 "against.")
+                 "against. That January break is the Chinese New Year holiday (22 January "
+                 "2023), when much of Shenzhen's population leaves the city; demand recovered "
+                 "in early February.")
     lines.append("")
 
     lines.append("## Claim 1: does a pooled model beat per zone models")
@@ -334,7 +336,13 @@ def render_headline(claims, context) -> str:
                  f"leaning on the latest observation simply tracks the new level. A separate "
                  f"one day shock inside the calibration window also lifts the residual "
                  f"thresholds; excluding it reverses the answer at the two looser rates, "
-                 f"which is reported in `docs/results.md` rather than left out.")
+                 f"which is reported in `docs/results.md` rather than left out. "
+                 "The break is the Chinese New Year exodus from Shenzhen: the 2023 Spring "
+                 "Festival fell on 22 January, the input monitor fired on 23 January, and demand "
+                 "recovered in early February. Six months of data contain no earlier New Year, so "
+                 "the model had never seen this seasonal event. A production monitor should carry "
+                 "a holiday calendar, so that a known festival is expected rather than flagged as "
+                 "drift.")
     lines.append("")
 
     lines.append(f"**Claim 3, that marginal value ranks zones differently from utilisation: "

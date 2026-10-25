@@ -27,7 +27,7 @@ Six months of hourly data, 275 zones, 1,194,600 zone hours, 17,532 charging poin
 
 **Claim 1, that a pooled model beats per zone models and helps quieter zones most: refuted.** The pooled model wins 6 of 9 target and horizon combinations on pooled MASE, so the first half holds. The second half does not: the Spearman correlation between zone volume decile and the pooled model's advantage is +0.334 across 275 zones, and the claim required it to be negative. The advantage runs the other way: in the quietest decile the per zone models win by 0.178 MASE on average, while the busiest decile favours pooling by +0.012. Borrowing strength across zones helps the zones that already have the most data, which is the opposite of the reasoning the claim was built on.
 
-**Claim 2, that input drift shows up later than residual error: refuted.** Against the change point of 2023-01-18 00:00, the input monitor alerts 143 hours in and the residual monitor never alerts at any of the matched rates. The reason is visible in the data: after the break the mean absolute residual falls rather than rises, because a one hour ahead model leaning on the latest observation simply tracks the new level. A separate one day shock inside the calibration window also lifts the residual thresholds; excluding it reverses the answer at the two looser rates, which is reported in `docs/results.md` rather than left out.
+**Claim 2, that input drift shows up later than residual error: refuted.** Against the change point of 2023-01-18 00:00, the input monitor alerts 143 hours in and the residual monitor never alerts at any of the matched rates. The reason is visible in the data: after the break the mean absolute residual falls rather than rises, because a one hour ahead model leaning on the latest observation simply tracks the new level. A separate one day shock inside the calibration window also lifts the residual thresholds; excluding it reverses the answer at the two looser rates, which is reported in `docs/results.md` rather than left out. The break is the Chinese New Year exodus from Shenzhen: the 2023 Spring Festival fell on 22 January, the input monitor fired on 23 January, and demand recovered in early February. Six months of data contain no earlier New Year, so the model had never seen this seasonal event. A production monitor should carry a holiday calendar, so that a known festival is expected rather than flagged as drift.
 
 **Claim 3, that marginal value ranks zones differently from utilisation: supported.** The Spearman correlation between mean utilisation and simulated marginal served energy is 0.577, below the 0.9 the claim set, and only 11 of the top twenty zones are shared. Allocating by marginal served energy beats allocating by utilisation at 5 of 5 budgets, by 268,708 kWh on average over the peak fortnight. The substance is that 152 of 275 zones gain nothing at all from an extra point, because they never fill: utilisation orders every zone, marginal value is zero for most of them.
 
@@ -75,7 +75,13 @@ bookkeeping is local to a run.
 
 ## Running it
 
-Dependencies are numpy, scipy, pandas, scikit-learn, matplotlib and pytest.
+Dependencies are numpy, scipy, pandas, pyarrow (for the parquet cache),
+scikit-learn, matplotlib and pytest. `requirements.txt` pins the versions the
+full pipeline was last rerun and tested with, on Python 3.12. The library
+versions of the original run were not recorded, so a rerun on the pinned set
+reproduces every claim verdict and the capacity figures, with small shifts in
+the third decimal elsewhere (for example the claim 1 Spearman correlation is
++0.329 on the pinned set against +0.334 in the original run).
 `duckdb` is used as a faster SQL engine if it is already installed, and the SQL
 layer falls back to `sqlite3` from the standard library otherwise. The scripts
 add `src/` to the import path themselves, so no install step is needed.

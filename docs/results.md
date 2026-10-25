@@ -39,7 +39,7 @@ Two detectors were run independently on the day of week adjusted daily series. T
 | duration | 2023-01-27 | 20 | +30.6% | 0.0020 |
 | duration | 2023-02-09 | 33 | +11.4% | 0.0020 |
 
-The longest segment of the daily utilisation series with no detected break runs from 2022-11-08 00:00 to 2023-01-17 23:00. That segment calibrates every monitor, and the break immediately after it, 2023-01-18 00:00, is what detection delay is measured against.
+The longest segment of the daily utilisation series with no detected break runs from 2022-11-08 00:00 to 2023-01-17 23:00. That segment calibrates every monitor, and the break immediately after it, 2023-01-18 00:00, is what detection delay is measured against. That January break is the Chinese New Year holiday (22 January 2023), when much of Shenzhen's population leaves the city; demand recovered in early February.
 
 ## Claim 1: does a pooled model beat per zone models
 

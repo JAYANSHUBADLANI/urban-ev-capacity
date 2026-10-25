@@ -91,7 +91,10 @@ only.
 Six months spanning late 2022 into early 2023 covers at least two demand
 episodes. Both detectors agree on a decline in late October with a recovery in
 early November, and on a decline in mid January with a recovery in early
-February. A model validated on this window has been validated across regime
+February. The January decline is the Chinese New Year holiday (22 January
+2023), when much of Shenzhen's population leaves the city, so the monitoring
+result measures detection of a known seasonal event that the six month window
+had not seen before, not of an unexplained regime change. A model validated on this window has been validated across regime
 change, which is informative, but six months does not establish an annual
 seasonal pattern, and I make no claim about one.
 

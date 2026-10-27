@@ -29,7 +29,7 @@ Six months of hourly data, 275 zones, 1,194,600 zone hours, 17,532 charging poin
 
 **Claim 2, that input drift shows up later than residual error: refuted.** Against the change point of 2023-01-18 00:00, the input monitor alerts 143 hours in and the residual monitor never alerts at any of the matched rates. The reason is visible in the data: after the break the mean absolute residual falls rather than rises, because a one hour ahead model leaning on the latest observation simply tracks the new level. A separate one day shock inside the calibration window also lifts the residual thresholds; excluding it reverses the answer at the two looser rates, which is reported in `docs/results.md` rather than left out. The break is the Chinese New Year exodus from Shenzhen: the 2023 Spring Festival fell on 22 January, the input monitor fired on 23 January, and demand recovered in early February. Six months of data contain no earlier New Year, so the model had never seen this seasonal event. A production monitor should carry a holiday calendar, so that a known festival is expected rather than flagged as drift.
 
-**Claim 3, that marginal value ranks zones differently from utilisation: supported.** The Spearman correlation between mean utilisation and simulated marginal served energy is 0.577, below the 0.9 the claim set, and only 11 of the top twenty zones are shared. Allocating by marginal served energy beats allocating by utilisation at 5 of 5 budgets, by 268,708 kWh on average over the peak fortnight. The substance is that 152 of 275 zones gain nothing at all from an extra point, because they never fill: utilisation orders every zone, marginal value is zero for most of them.
+**Claim 3, that marginal value ranks zones differently from utilisation: supported.** The Spearman correlation between mean utilisation and simulated marginal served energy is 0.577, below the 0.9 the claim set, and only 11 of the top twenty zones are shared. Allocating by marginal served energy beats allocating by utilisation at 5 of 5 budgets, by 268,708 kWh on average over the peak fortnight. The substance is that 152 of 275 zones gain essentially nothing from an extra point (no simulated gain and under 1 kWh by the analytic estimate), because they never fill: utilisation orders every zone, marginal value is close to zero for most of them.
 
 **On retraining:** doing nothing gives a mean absolute error of 1.722 charging points over the scored period. Retraining when the input drift monitor fires costs 5 refits and gives 1.699, with the lowest error after the break of any policy tested (1.473 against 1.526). Fixed fortnightly retraining reaches a similar place for more refits.
 
@@ -77,7 +77,7 @@ bookkeeping is local to a run.
 
 Dependencies are numpy, scipy, pandas, pyarrow (for the parquet cache),
 scikit-learn, matplotlib and pytest. `requirements.txt` pins the versions the
-full pipeline was last rerun and tested with, on Python 3.12. The library
+full pipeline was last rerun and tested with, on Python 3.12 (the CI workflow runs the test suite on Python 3.13). The library
 versions of the original run were not recorded, so a rerun on the pinned set
 reproduces every claim verdict and the capacity figures, with small shifts in
 the third decimal elsewhere (for example the claim 1 Spearman correlation is

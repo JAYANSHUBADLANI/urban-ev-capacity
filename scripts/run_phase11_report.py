@@ -221,11 +221,12 @@ def render_results(claims, model_table, capacity_table, context) -> str:
                  "the peak fortnight.")
     lines.append("")
     if summary["n_zones_with_no_marginal_value"] >= 0:
-        lines.append(f"{summary['n_zones_with_no_marginal_value']} of 275 zones gain nothing "
-                     "at all from an added point over the simulated fortnight, because they "
-                     "never fill. That is the substance behind the ranking disagreement: "
-                     "utilisation orders every zone, while marginal value is zero for most "
-                     "of them.")
+        lines.append(f"{summary['n_zones_with_no_marginal_value']} of 275 zones gain essentially "
+                     "nothing from an added point over the simulated fortnight (no simulated "
+                     "gain and under 1 kWh by the analytic estimate), because they never "
+                     "fill. That is the substance behind the ranking disagreement: "
+                     "utilisation orders every zone, while marginal value is close to zero "
+                     "for most of them.")
         lines.append("")
 
     lines.append("| Budget (points) | No investment (kWh) | By utilisation (kWh) | "
@@ -355,8 +356,9 @@ def render_headline(claims, context) -> str:
                  f"by {three['mean_extra_energy_kwh']:,.0f} kWh on average over the peak "
                  f"fortnight. The substance is that "
                  f"{three['n_zones_with_no_marginal_value']} of {context['n_zones']} zones "
-                 f"gain nothing at all from an extra point, because they never fill: "
-                 f"utilisation orders every zone, marginal value is zero for most of them.")
+                 f"gain essentially nothing from an extra point (no simulated gain and under "
+                 f"1 kWh by the analytic estimate), because they never fill: "
+                 f"utilisation orders every zone, marginal value is close to zero for most of them.")
     lines.append("")
 
     if context["best_retraining"]:

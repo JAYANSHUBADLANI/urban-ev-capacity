@@ -104,7 +104,7 @@ The Spearman correlation between mean observed utilisation and simulated margina
 
 The marginal energy rule serves more than the utilisation rule at 5 of 5 budgets, by 268,708 kWh on average over the peak fortnight.
 
-152 of 275 zones gain nothing at all from an added point over the simulated fortnight, because they never fill. That is the substance behind the ranking disagreement: utilisation orders every zone, while marginal value is zero for most of them.
+152 of 275 zones gain essentially nothing from an added point over the simulated fortnight (no simulated gain and under 1 kWh by the analytic estimate), because they never fill. That is the substance behind the ranking disagreement: utilisation orders every zone, while marginal value is close to zero for most of them.
 
 | Budget (points) | No investment (kWh) | By utilisation (kWh) | By marginal energy (kWh) | Difference |
 | --- | --- | --- | --- | --- |

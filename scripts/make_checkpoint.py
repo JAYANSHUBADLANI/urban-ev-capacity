@@ -2,8 +2,8 @@
 
 The archive carries the whole tree except the fetched inputs and the cached
 intermediates, so it holds the code, the results, the figures, the documents
-and the run state. Unpacking it into an empty directory is enough to continue
-the work, and re-fetching the dataset against the manifest it carries is itself
+and the run state. Unpacking it into an empty directory restores the whole
+project, and re-fetching the dataset against the manifest it carries is itself
 a reproducibility check.
 
     python scripts/make_checkpoint.py

@@ -134,7 +134,7 @@ Energy uses the rated power estimate over the busiest 336 hours, 20 seeds per sc
 
 ## Anomalies
 
-The robust score flags 6,431 zone hours and the isolation forest flags 5,973, out of 1,194,600. They agree on 101, a Jaccard index of 0.0082. There are no labels, so no precision or recall is reported. Two methods of different type flagging almost disjoint sets is the honest finding: neither should be treated as an oracle, and a reviewer reading the sample in `results/anomaly_sample.csv` will see they are detecting different things.
+The robust score flags 6,431 zone hours and the isolation forest flags 5,973, out of 1,194,600. They agree on 101, a Jaccard index of 0.0082. There are no labels, so no precision or recall is reported. Two methods of different type flagging almost disjoint sets means neither should be treated as an oracle, and a reviewer reading the sample in `results/anomaly_sample.csv` will see they are detecting different things.
 
 ## Headline tables and determinism
 

@@ -5,7 +5,7 @@ replacement, so anything found here is a residual anomaly in a cleaned series,
 not a raw sensor fault. That distinction is kept in the write up because it
 changes what the finding means.
 
-Two methods of genuinely different type are used. The first is distributional:
+Two methods of different type are used. The first is distributional:
 a robust score against the zone's own typical value for that hour of the week,
 using the median and the median absolute deviation, which does not assume any
 model. The second is model based: an isolation forest over a small feature
@@ -81,7 +81,7 @@ def forest_scores(bundle: Bundle, contamination: float = CONTAMINATION) -> pd.Da
 def agreement(robust: pd.DataFrame, forest: pd.DataFrame) -> Dict[str, float]:
     """How much the two detectors overlap.
 
-    With no ground truth this is the honest measurement: the size of each flag
+    With no ground truth this is what can be measured: the size of each flag
     set, the size of the intersection, and the Jaccard index. It says how much
     the methods see the same thing, and nothing about whether either is right.
     """

@@ -33,7 +33,7 @@ Six months of hourly data, 275 zones, 1,194,600 zone hours, 17,532 charging poin
 
 **On retraining:** doing nothing gives a mean absolute error of 1.722 charging points over the scored period. Retraining when the input drift monitor fires costs 5 refits and gives 1.699, with the lowest error after the break of any policy tested (1.473 against 1.526). Fixed fortnightly retraining reaches a similar place for more refits.
 
-**The number that moves everything:** energy is modelled, not metered, and the two published estimates differ by a factor of 2.42 across the estate (3.117e+08 kWh against 1.286e+08 kWh). Headline energy figures use the rated power estimate. The choice changes every energy level and none of the rankings: the allocation rules finish in the same order under both.
+**The biggest uncertainty:** energy is modelled, not metered, and the two published estimates differ by a factor of 2.42 across the estate (3.117e+08 kWh against 1.286e+08 kWh). Headline energy figures use the rated power estimate. The choice changes every energy level and none of the rankings: the allocation rules finish in the same order under both.
 
 ## Data
 

@@ -45,7 +45,7 @@ BOUNDS: Dict[str, tuple] = {
 }
 
 # A run of identical consecutive values this long or longer is treated as a
-# candidate imputation artefact. Four hours is chosen because a genuine flat
+# candidate imputation artefact. Four hours is chosen because a real flat
 # stretch of that length is rare in an hourly demand series while forward fill
 # from a coarser source produces them routinely.
 RUN_THRESHOLD = 4

@@ -100,7 +100,7 @@ def input_monitor_series(feature_blocks: Dict[str, np.ndarray],
     PSI is averaged across features, because drift that shows in one feature
     only is usually a data plumbing problem rather than a demand regime change.
     KS is taken as the maximum across features, which makes the two input
-    monitors genuinely different rather than two scalings of one statistic.
+    monitors different in kind rather than two scalings of one statistic.
     """
     psi_columns, ks_columns = [], []
     for block in feature_blocks.values():

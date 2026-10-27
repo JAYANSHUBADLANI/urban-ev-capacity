@@ -279,7 +279,7 @@ def render_results(claims, model_table, capacity_table, context) -> str:
                      f"{int(row['n_rows']):,}. They agree on {int(row['n_both']):,}, a "
                      f"Jaccard index of {row['jaccard']:.4f}. There are no labels, so no "
                      "precision or recall is reported. Two methods of different type "
-                     "flagging almost disjoint sets is the honest finding: neither should be "
+                     "flagging almost disjoint sets means neither should be "
                      "treated as an oracle, and a reviewer reading the sample in "
                      "`results/anomaly_sample.csv` will see they are detecting different "
                      "things.")
@@ -374,7 +374,7 @@ def render_headline(claims, context) -> str:
                      f"a similar place for more refits.")
         lines.append("")
 
-    lines.append(f"**The number that moves everything:** energy is modelled, not metered, "
+    lines.append(f"**The biggest uncertainty:** energy is modelled, not metered, "
                  f"and the two published estimates differ by a factor of "
                  f"{context['energy_ratio']:.2f} across the estate "
                  f"({context['energy_rated']:.3e} kWh against "
